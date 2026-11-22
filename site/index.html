@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>libmisb SDK downloads · ImpleoTV</title>
+  <meta name="description" content="Download the libmisb ST 0601 native SDK and WebAssembly decoder for Windows, Linux, macOS, browsers and Node.js.">
+  <link rel="icon" href="./manual/img/libmisb-mark.svg">
+  <style>
+    *{box-sizing:border-box}body{margin:0;color:#182e3a;background:#fff;font:16px/1.55 Inter,system-ui,sans-serif}
+    main,nav,footer{width:min(100% - 40px,1060px);margin:auto}header{border-bottom:1px solid #dbe4e7}
+    nav{display:flex;align-items:center;gap:24px;min-height:66px}nav strong{margin-right:auto;display:flex;align-items:center;gap:10px}nav img{width:26px}
+    a{color:#155678;text-underline-offset:.19em}a:hover{color:#062f46}a:focus-visible{outline:3px solid #197eb1;outline-offset:3px}
+    .hero{display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:42px;padding:44px 0}.hero img{width:100%;height:auto}
+    h1,h2,h3{line-height:1.16;margin:0}h1{font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.055em}h2{font-size:1.65rem;letter-spacing:-.03em}
+    p{max-width:64ch}.hero p{font-size:1.12rem}.primary{display:inline-block;background:#164b65;color:white;text-decoration:none;padding:9px 17px;border-radius:5px}.primary:hover{background:#10374b;color:#fff}
+    section{padding:27px 0}.rows{margin-top:16px}.row{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:18px;align-items:baseline;padding:15px 0;border-top:1px solid #ccd8de}.row h3{font-size:1.03rem}.row small{display:block;color:#54666e}.row a{width:fit-content}
+    footer{border-top:1px solid #ccd8de;margin-top:32px;padding:23px 0 35px;color:#54666e}footer a{margin-right:18px}code{overflow-wrap:anywhere}
+    @media(max-width:680px){.hero{grid-template-columns:1fr;gap:18px;padding:32px 0 12px}.hero img{max-width:380px}.row{grid-template-columns:1.1fr 1fr;gap:9px}.row h3{grid-column:1/-1}nav{gap:12px;font-size:.93rem}}
+  </style>
+</head>
+<body>
+  <header><nav aria-label="Main"><strong><img src="./manual/img/libmisb-mark.svg" alt="">ImpleoTV</strong><a href="./manual/">SDK manual</a><a href="https://github.com/impleotv/libmisb-release/releases">All releases</a></nav></header>
+  <main>
+    <div class="hero"><div><h1>libmisb SDK</h1><p>Process MISB ST 0601 metadata in native applications, browsers, and Node.js.</p><a class="primary" href="./manual/docs/intro/">Decode your first packet</a></div><img src="./manual/img/libmisb-library.png" width="1697" height="927" alt="The libmisb SDK connects KLV metadata to native and web applications"></div>
+    <section><h2>Native SDK · v@VERSION@</h2><p>Each installer includes the language bindings, examples, and an optional web decoder. Choose a portable ZIP to unpack the native SDK directly.</p>
+      <div class="rows">
+        <div class="row"><h3>Windows <small>x64</small></h3><a href="@ASSETS@/libmisb-sdk-@VERSION@-windows-amd64-setup.exe">Signed EXE installer</a><a href="@ASSETS@/libmisb-sdk-@VERSION@-windows-amd64.zip">Windows ZIP</a></div>
+        <div class="row"><h3>Linux <small>x64</small></h3><a href="@ASSETS@/libmisb-sdk-@VERSION@-linux-amd64-setup.run">Shell installer</a><a href="@ASSETS@/libmisb-sdk-@VERSION@-linux-amd64.zip">Linux ZIP</a></div>
+        <div class="row"><h3>macOS <small>Apple silicon · arm64</small></h3><a href="@ASSETS@/libmisb-sdk-@VERSION@-darwin-arm64-setup.pkg">Unsigned PKG installer</a><a href="@ASSETS@/libmisb-sdk-@VERSION@-darwin-arm64.zip">macOS ZIP</a></div>
+      </div>
+    </section>
+    <section><h2>WebAssembly decoder</h2><p>Serve the static distribution from a web server or install the npm tarball locally. Both include the decoder and its TypeScript declarations.</p><div class="row"><h3>Browser and Node.js</h3><a href="@ASSETS@/libmisb-wasm-@VERSION@.zip">Static web ZIP</a><a href="@ASSETS@/impleotv-libmisb-wasm-@VERSION@.tgz">npm tarball</a></div></section>
+    <section><h2>Customer manual</h2><p>Start in demo mode, read an ST 0601 packet, and compare the result with the included examples. <a href="./manual/">Read online</a> or <a href="@ASSETS@/libmisb-manual-@VERSION@.zip">download the manual ZIP</a>.</p></section>
+  </main>
+  <footer><a href="@ASSETS@/SHA256SUMS">SHA-256 checksums</a><a href="https://github.com/impleotv/libmisb-release/releases/tag/v@VERSION@">v@VERSION@ release notes</a></footer>
+</body>
+</html>
